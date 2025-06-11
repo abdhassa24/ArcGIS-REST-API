@@ -1,0 +1,32 @@
+{
+ "layers" : [
+ {
+ "id" : 0,
+ "relationships" : [
+ {
+ "id" : 0,
+ "name" : "myRel",
+ "relatedTableId" : 1,
+ "cardinality" : "esriRelCardinalityOneToMany",
+ "role" : "esriRelRoleOrigin",
+ "keyField" : "GlobalID",
+ "composite" : false
+ }
+ ]
+ },
+ {
+ "id" : 1,
+ "relationships" : [
+ {
+ "id" : 1,
+ "name" : "myRel",
+ "relatedTableId" : 0,
+ "cardinality" : "esriRelCardinalityOneToMany",
+ "role" : "esriRelRoleDestination",
+ "keyField" : "ParentGlobalID",
+ "composite" :false
+ }
+ ]
+ }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+  "layers": [],
+  "tables": [
+      {
+          "id": 1,
+          "name": "Inspection",
+          "type": "Table",
+          "displayField": "",
+          "description": "",
+          "copyrightText": "",
+          "defaultVisibility": true,
+          "editingInfo": {
+              "lastEditDate": null
+          },
+          "isDataVersioned": false,
+          "supportsAppend": true,
+          "supportsCalculate": true,
+          "supportsASyncCalculate": true,
+          "supportsTruncate": true,
+          "supportsAttachmentsByUploadId": true,
+          "supportsAttachmentsResizing": true,
+          "supportsRollbackOnFailureParameter": true,
+          "supportsStatistics": true,
+          "supportsExceedsLimitStatistics": true,
+          "supportsAdvancedQueries": true,
+          "supportsValidateSql": true,
+          "supportsCoordinatesQuantization": true,
+          "supportsFieldDescriptionProperty": true,
+          "supportsQuantizationEditMode": true,
+          "supportsApplyEditsWithGlobalIds": false,
+          "advancedQueryCapabilities": {
+              "supportsPagination": true,
+              "supportsPaginationOnAggregatedQueries": true,
+              "supportsQueryRelatedPagination": true,
+              "supportsQueryWithDistance": true,
+              "supportsReturningQueryExtent": true,
+              "supportsStatistics": true,
+              "supportsOrderBy": true,
+              "supportsDistinct": true,
+              "supportsQueryWithResultType": true,
+              "supportsSqlExpression": true,
+              "supportsAdvancedQueryRelated": true,
+              "supportsCountDistinct": true,
+              "supportsPercentileStatistics": true,
+              "supportsLod": true,
+              "supportsQueryWithLodSR": false,
+              "supportedLodTypes": [
+                  "geohash"
+              ],
+              "supportsReturningGeometryCentroid": false,
+              "supportsQueryWithDatumTransformation": true,
+              "supportsHavingClause": true,
+              "supportsOutFieldSQLExpression": true,
+              "supportsMaxRecordCountFactor": true,
+              "supportsTopFeaturesQuery": true,
+              "supportsQueryWithCacheHint": true
+          },
+          "useStandardizedQueries": true,
+          "allowGeometryUpdates": true,
+          "hasAttachments": false,
+          "htmlPopupType": "esriServerHTMLPopupTypeNone",
+          "hasM": false,
+          "hasZ": false,
+          "objectIdField": "OBJECTID",
+          "uniqueIdField": {
+              "name": "OBJECTID",
+              "isSystemMaintained": true
+          },
+          "globalIdField": "",
+          "typeIdField": "",
+          "fields": [
+              {
+                  "name": "OBJECTID",
+                  "type": "esriFieldTypeOID",
+                  "alias": "OBJECTID",
+                  "sqlType": "sqlTypeOther",
+                  "nullable": false,
+                  "editable": false,
+                  "domain": null,
+                  "defaultValue": null
+              }
+          ],
+          "indexes": [],
+          "types": [],
+          "templates": [],
+          "supportedQueryFormats": "JSON, geoJSON, PBF",
+          "hasStaticData": false,
+          "maxRecordCount": 2000,
+          "standardMaxRecordCount": 32000,
+          "tileMaxRecordCount": 8000,
+          "maxRecordCountFactor": 1,
+          "capabilities": "Query,Editing,Create,Update,Delete,Sync",
+          "syncEnabled": true
+      }
+  ]
+}
