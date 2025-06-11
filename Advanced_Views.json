@@ -1,0 +1,80 @@
+{
+    "layers": [
+        {
+            "name": "poles",
+            "displayField": "",
+            "description": "AttributeJoin",
+            "adminLayerInfo": {
+                "tableName": "poles",
+                "viewLayerDefinition": {
+                    "table": {
+                        "name": "Poles",
+                        "sourceServiceName": "Poles",
+                        "sourceLayerId": 0,
+                        "sourceId": 180,
+                        "sourceLayerFields": [
+                            {
+                                "name": "Barcode",
+                                "alias": "Barcode",
+                                "source": "Barcode"
+                            },
+                            {
+                                "name": "OBJECTID",
+                                "alias": "OBJECTID",
+                                "source": "OBJECTID"
+                            }
+                        ],
+                        "relatedTables": [
+                            {
+                                "name": "Inspection",
+                                "sourceServiceName": "Inspection",
+                                "sourceLayerId": 0,
+                                "sourceId": 203,
+                                "sourceLayerFields": [
+                                    {
+                                        "name": "Notes",
+                                        "alias": "Notes",
+                                        "source": "Notes"
+                                    }
+                                ],
+                                "type": "LEFT",
+                                "parentKeyFields": [
+                                    "Barcode"
+                                ],
+                                "keyFields": [
+                                    "Barcode"
+                                ],
+                                "operator": "EQUALS"
+                            },
+                            {
+                                "name": "Pole_Info",
+                                "sourceServiceName": "Pole_Info",
+                                "sourceLayerId": 0,
+                                "sourceId": 203,
+                                "sourceLayerFields": [
+                                    {
+                                        "name": "Material",
+                                        "alias": "Material",
+                                        "source": "Material"
+                                    }
+                                ],
+                                "type": "LEFT",
+                                "parentKeyFields": [
+                                    "Barcode"
+                                ],
+                                "keyFields": [
+                                    "Barcode"
+                                ],
+                                "operator": "EQUALS"
+                            }
+                        ],
+                        "materialized": false
+                    }
+                },
+                "geometryField": {
+                    "name": "Poles.Shape"
+                }
+            }
+        }
+    ]
+}
