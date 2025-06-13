@@ -1,0 +1,60 @@
+{
+    "layers": [
+        {
+            "name": "Pole_Inspection",
+            "displayField": "",
+            "description": "AttributeJoin",
+            "adminLayerInfo": {
+                "tableName": "Poles_Inspection",
+                "viewLayerDefinition": {
+                    "table": {
+                        "name": "Poles",
+                        "sourceServiceName": "Poles",
+                        "sourceLayerId": 0,
+                        "sourceId": 180,
+                        "filter":{"sqlExpression" : "Pole_ID = 'P1'" },
+                        "sourceLayerFields": [
+                            {
+                                "name": "Pole_ID",
+                                "alias": "Pole_ID",
+                                "source": "Pole_ID"
+                            }
+                        ],
+                        "relatedTables": [
+                            {
+                                "name": "Inspections",
+                                "sourceServiceName": "Inspection",
+                                "sourceLayerId": 0,
+                                "sourceId": 203,
+                                "sourceLayerFields": [
+                                    {
+                                        "name": "Pole_ID",
+                                        "alias": "Pole_ID",
+                                        "source": "Pole_ID"
+                                    },
+                                    {
+                                        "name": "Inspection_Notes",
+                                        "alias": "Inspection_Notes",
+                                        "source": "Inspection_Notes"
+                                    }
+                                ],
+                                "type": "LEFT",
+                                "parentKeyFields": [
+                                    "Pole_ID"
+                                ],
+                                "keyFields": [
+                                    "Pole_ID"
+                                ],
+                                "operator": "EQUALS"
+                            }
+                        ],
+                        "materialized": false
+                    }
+                },
+                "geometryField": {
+                    "name": "Poles.Shape"
+                }
+            }
+        }
+    ]
+}
