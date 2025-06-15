@@ -1,0 +1,21 @@
+{"fields" : [
+
+    {
+      "name" : "Country", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Country", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 256, 
+      "nullable" : true, 
+      "editable" : true, 
+      "visible" : true, 
+      "domain" : null, 
+      "defaultValue" : null,
+      "collation":{
+     "locale": "ar-SA",
+     "caseSensitive":true,
+     "accentSensitive":true
+    }
+}
+  ]
+}
