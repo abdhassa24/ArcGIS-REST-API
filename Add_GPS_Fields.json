@@ -1,0 +1,262 @@
+{
+
+            "fields": [   
+          {
+                    "name": "esrignss_speed",
+                    "type": "esriFieldTypeDouble",
+                    "alias": "Speed (km/h)",
+                    "sqlType": "sqlTypeOther",
+                    "nullable": true,
+                    "editable": true,
+                    "domain": null,
+                    "defaultValue": null
+                },
+                {
+                    "name": "esrignss_direction",
+                    "type": "esriFieldTypeDouble",
+                    "alias": "Direction of travel (°)",
+                    "sqlType": "sqlTypeOther",
+                    "nullable": true,
+                    "editable": true,
+                    "domain": null,
+                    "defaultValue": null
+                },
+                {
+                    "name": "esrisnsr_azimuth",
+                    "type": "esriFieldTypeDouble",
+                    "alias": "Compass reading (°)",
+                    "sqlType": "sqlTypeOther",
+                    "nullable": true,
+                    "editable": true,
+                    "domain": null,
+                    "defaultValue": null
+                },
+                {
+                    "name": "esrignss_positionsourcetype",
+                    "type": "esriFieldTypeInteger",
+                    "alias": "Position source type",
+                    "sqlType": "sqlTypeOther",
+                    "nullable": true,
+                    "editable": true,
+                    "domain": {
+                        "type": "codedValue",
+                        "name": "ESRI_POSITIONSOURCETYPE_DOMAIN",
+                        "codedValues": [
+                            {
+                                "name": "Unknown",
+                                "code": 0
+                            },
+                            {
+                                "name": "User defined",
+                                "code": 1
+                            },
+                            {
+                                "name": "Integrated (System) Location Provider",
+                                "code": 2
+                            },
+                            {
+                                "name": "External GNSS Receiver",
+                                "code": 3
+                            },
+                            {
+                                "name": "Network Location Provider",
+                                "code": 4
+                            },
+                            {
+                                "name": "Snapped",
+                                "code": 5
+                            }
+                        ]
+                    },
+                    "defaultValue": null
+                },
+                {
+                    "name": "esrignss_receiver",
+                    "type": "esriFieldTypeString",
+                    "alias": "Receiver Name",
+                    "sqlType": "sqlTypeOther",
+                    "length": 50,
+                    "nullable": true,
+                    "editable": true,
+                    "domain": null,
+                    "defaultValue": null
+                },
+                {
+                    "name": "esrignss_h_rms",
+                    "type": "esriFieldTypeDouble",
+                    "alias": "Horizontal Accuracy (m)",
+                    "sqlType": "sqlTypeOther",
+                    "nullable": true,
+                    "editable": true,
+                    "domain": null,
+                    "defaultValue": null
+                },
+                {
+                    "name": "esrignss_v_rms",
+                    "type": "esriFieldTypeDouble",
+                    "alias": "Vertical Accuracy (m)",
+                    "sqlType": "sqlTypeOther",
+                    "nullable": true,
+                    "editable": true,
+                    "domain": null,
+                    "defaultValue": null
+                },
+                {
+                    "name": "esrignss_latitude",
+                    "type": "esriFieldTypeDouble",
+                    "alias": "Latitude",
+                    "sqlType": "sqlTypeOther",
+                    "nullable": true,
+                    "editable": true,
+                    "domain": null,
+                    "defaultValue": null
+                },
+                {
+                    "name": "esrignss_longitude",
+                    "type": "esriFieldTypeDouble",
+                    "alias": "Longitude",
+                    "sqlType": "sqlTypeOther",
+                    "nullable": true,
+                    "editable": true,
+                    "domain": null,
+                    "defaultValue": null
+                },
+                {
+                    "name": "esrignss_altitude",
+                    "type": "esriFieldTypeDouble",
+                    "alias": "Altitude",
+                    "sqlType": "sqlTypeOther",
+                    "nullable": true,
+                    "editable": true,
+                    "domain": null,
+                    "defaultValue": null
+                },
+                {
+                    "name": "esrignss_pdop",
+                    "type": "esriFieldTypeDouble",
+                    "alias": "PDOP",
+                    "sqlType": "sqlTypeOther",
+                    "nullable": true,
+                    "editable": true,
+                    "domain": null,
+                    "defaultValue": null
+                },
+                {
+                    "name": "esrignss_hdop",
+                    "type": "esriFieldTypeDouble",
+                    "alias": "HDOP",
+                    "sqlType": "sqlTypeOther",
+                    "nullable": true,
+                    "editable": true,
+                    "domain": null,
+                    "defaultValue": null
+                },
+                {
+                    "name": "esrignss_vdop",
+                    "type": "esriFieldTypeDouble",
+                    "alias": "VDOP",
+                    "sqlType": "sqlTypeOther",
+                    "nullable": true,
+                    "editable": true,
+                    "domain": null,
+                    "defaultValue": null
+                },
+                {
+                    "name": "esrignss_fixtype",
+                    "type": "esriFieldTypeSmallInteger",
+                    "alias": "Fix Type",
+                    "sqlType": "sqlTypeOther",
+                    "nullable": true,
+                    "editable": true,
+                    "domain": {
+                        "type": "codedValue",
+                        "name": "ESRI_FIX_TYPE_DOMAIN",
+                        "codedValues": [
+                            {
+                                "name": "NoFix",
+                                "code": 0
+                            },
+                            {
+                                "name": "GPS",
+                                "code": 1
+                            },
+                            {
+                                "name": "DifferentialGPS",
+                                "code": 2
+                            },
+                            {
+                                "name": "PrecisePositioningService",
+                                "code": 3
+                            },
+                            {
+                                "name": "RTKFixed",
+                                "code": 4
+                            },
+                            {
+                                "name": "RTKFloat",
+                                "code": 5
+                            }
+                        ]
+                    },
+                    "defaultValue": null
+                },
+                {
+                    "name": "esrignss_correctionage",
+                    "type": "esriFieldTypeDouble",
+                    "alias": "Correction Age",
+                    "sqlType": "sqlTypeOther",
+                    "nullable": true,
+                    "editable": true,
+                    "domain": null,
+                    "defaultValue": null
+                },
+                {
+                    "name": "esrignss_stationid",
+                    "type": "esriFieldTypeSmallInteger",
+                    "alias": "Station ID",
+                    "sqlType": "sqlTypeOther",
+                    "nullable": true,
+                    "editable": true,
+                    "domain": null,
+                    "defaultValue": null
+                },
+                {
+                    "name": "esrignss_numsats",
+                    "type": "esriFieldTypeSmallInteger",
+                    "alias": "Number of Satellites",
+                    "sqlType": "sqlTypeOther",
+                    "nullable": true,
+                    "editable": true,
+                    "domain": {
+                        "type": "range",
+                        "name": "ESRI_NUM_SATS_DOMAIN",
+                        "range": [
+                            0,
+                            99
+                        ]
+                    },
+                    "defaultValue": null
+                },
+                {
+                    "name": "esrignss_fixdatetime",
+                    "type": "esriFieldTypeDate",
+                    "alias": "Fix Time",
+                    "sqlType": "sqlTypeOther",
+                    "length": 8,
+                    "nullable": true,
+                    "editable": true,
+                    "domain": null,
+                    "defaultValue": null
+                },
+                {
+                    "name": "esrignss_avg_h_rms",
+                    "type": "esriFieldTypeDouble",
+                    "alias": "Average Horizontal Accuracy (m)",
+                    "sqlType": "sqlTypeOther",
+                    "nullable": true,
+                    "editable": true,
+                    "domain": null,
+                    "defaultValue": null
+                }
+            ]
+        }
