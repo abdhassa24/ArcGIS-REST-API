@@ -1,0 +1,71 @@
+{
+    "layers": [
+        {
+            "name": "poles",
+            "displayField": "",
+            "description": "AttributeJoin",
+            "adminLayerInfo": {
+                "tableName": "poles",
+                "viewLayerDefinition": {
+                    "table": {
+                        "name": "Poles",
+                        "sourceServiceName": "Poles",
+                        "sourceLayerId": 0,
+                        "sourceId": 180,
+                        "sourceLayerFields": [
+                            {
+                                "name": "Pole_ID",
+                                "alias": "Pole_ID",
+                                "source": "Pole_ID"
+                            },
+                            {
+                                "name": "Count_1",
+                                "alias": "Count_1",
+                                "source": "Count_1"
+                            },
+                                      {
+                                "name": "Count_2",
+                                "alias": "Count_2",
+                                "source": "Count_2"
+                            },
+                             {
+                                "name": "Total",
+                                "alias": "Total",
+                                 "expression": "Count_1 +  Count_2",
+                                 "type": "esriFieldTypeInteger"
+                            }
+
+                        ],
+                        "relatedTables": [
+                           {
+                                "name": "Inspections",
+                                "sourceServiceName": "Inspections",
+                                "sourceLayerId": 0,
+                                "sourceId": 203,
+                                "sourceLayerFields": [
+                                    {
+                                        "name": "Inspection_Notes",
+                                        "alias": "Inspection_Notes",
+                                        "source": "Inspection_Notes"
+                                    }
+                                ],
+                                "type": "LEFT",
+                                "parentKeyFields": [
+                                    "Pole_ID"
+                                ],
+                                "keyFields": [
+                                    "Pole_ID"
+                                ],
+                                "operator": "EQUALS"
+                            }
+                        ],
+                        "materialized": false
+                    }
+                },
+                "geometryField": {
+                    "name": "Poles.Shape"
+                }
+            }
+        }
+    ]
+}
