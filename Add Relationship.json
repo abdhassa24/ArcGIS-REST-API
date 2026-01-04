@@ -4,7 +4,7 @@
  "id" : 0,
  "relationships" : [
  {
- "id" : 0,
+ "id" : 1,
  "name" : "myRel",
  "relatedTableId" : 1,
  "cardinality" : "esriRelCardinalityOneToMany",
