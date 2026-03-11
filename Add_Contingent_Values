@@ -1,0 +1,49 @@
+{"contingentValuesDefinition" : 
+  {
+
+   "fieldGroups" : [
+      {
+        "name" : "Field_Group", 
+        "restrictive" : true, 
+        "fields" : [
+          {
+            "id" : 0, 
+            "name" : "City", 
+            "fieldType" : "esriFieldTypeString"}, 
+          {
+            "id" : 1, 
+            "name" : "Region", 
+            "fieldType" : "esriFieldTypeString"}
+        ], 
+  "domains": {
+          "City": "City",
+          "Region": "Region"
+        },
+        "contingentValues" : [
+          {
+            "id" : 1, 
+            "types" : [
+              3, 
+              3
+            ], 
+            "values" : [
+              "Pickering", 
+              "Durham"
+            ]
+          }, 
+          {
+            "id" : 2, 
+            "types" : [
+              3, 
+              3
+            ], 
+            "values" : [
+              "Toronto", 
+              "Toronto"
+            ]
+          }
+          ]
+}
+]
+} 
+}
