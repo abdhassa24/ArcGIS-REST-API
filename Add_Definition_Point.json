@@ -1,0 +1,237 @@
+{
+  "layers": [
+      {
+          "id": 2,
+          "enableUseOfScaleOutReplicasWhenEditable": true,
+          "name": "Daily_Activity_Comments",
+          "type": "Feature Layer",
+          "displayField": "",
+          "description": "",
+          "copyrightText": "",
+          "defaultVisibility": true,
+          "editingInfo": {
+              "lastEditDate": 1658654341208
+          },
+          "relationships": [],
+          "isDataVersioned": false,
+          "hasContingentValuesDefinition": false,
+          "supportsAppend": true,
+          "supportsCalculate": true,
+          "supportsASyncCalculate": true,
+          "supportsTruncate": true,
+          "supportsAttachmentsByUploadId": true,
+          "supportsAttachmentsResizing": true,
+          "supportsRollbackOnFailureParameter": true,
+          "supportsStatistics": true,
+          "supportsExceedsLimitStatistics": true,
+          "supportsAdvancedQueries": true,
+          "supportsValidateSql": true,
+          "supportsCoordinatesQuantization": true,
+          "supportsLayerOverrides": true,
+          "supportsTilesAndBasicQueriesMode": true,
+          "supportsFieldDescriptionProperty": true,
+          "supportsQuantizationEditMode": true,
+          "supportsApplyEditsWithGlobalIds": false,
+          "supportsReturningQueryGeometry": true,
+          "advancedQueryCapabilities": {
+              "supportsPagination": true,
+              "supportsQueryAttachmentsCountOnly": true,
+              "supportsPaginationOnAggregatedQueries": true,
+              "supportsQueryRelatedPagination": true,
+              "supportsQueryWithDistance": true,
+              "supportsReturningQueryExtent": true,
+              "supportsStatistics": true,
+              "supportsOrderBy": true,
+              "supportsDistinct": true,
+              "supportsQueryWithResultType": true,
+              "supportsSqlExpression": true,
+              "supportsAdvancedQueryRelated": true,
+              "supportsCountDistinct": true,
+              "supportsPercentileStatistics": true,
+              "supportsSpatialAggregationStatistics": true,
+              "supportedSpatialAggregationStatistics": [
+                  "EnvelopeAggregate",
+                  "CentroidAggregate",
+                  "ConvexHullAggregate"
+              ],
+              "supportsQueryAttachments": true,
+              "supportsLod": true,
+              "supportsQueryWithLodSR": false,
+              "supportedLodTypes": [
+                  "geohash"
+              ],
+              "supportsReturningGeometryCentroid": false,
+              "supportsQueryWithDatumTransformation": true,
+              "supportsHavingClause": true,
+              "supportsOutFieldSQLExpression": true,
+              "supportsMaxRecordCountFactor": true,
+              "supportsTopFeaturesQuery": true,
+              "supportsDisjointSpatialRel": true,
+              "supportsQueryWithCacheHint": true,
+              "supportedOperationsWithCacheHint": [
+                  "query",
+                  "queryTopFilter",
+                  "queryAnalytics",
+                  "queryAttachments",
+                  "queryRelated"
+              ],
+              "supportsQueryAttachmentsWithReturnUrl": true,
+              "supportsQueryAnalytic": true,
+              "supportsDefaultSR": true,
+              "supportsFullTextSearch": true
+          },
+          "advancedQueryAnalyticCapabilities": {
+              "supportsLinearRegression": true,
+              "supportsAsync": true,
+              "supportsPercentileAnalytic": true
+          },
+          "advancedEditingCapabilities": {
+              "supportedSqlFormatsInCalculate": [
+                  "standard"
+              ],
+              "supportsAsyncApplyEdits": true,
+              "supportsReturnEditResults": true
+          },
+          "infoInEstimates": [
+              "extent",
+              "count"
+          ],
+          "useStandardizedQueries": true,
+          "geometryType": "esriGeometryPoint",
+          "minScale": 0,
+          "maxScale": 0,
+          "extent": {
+              "xmin": -17811118.526923772,
+              "ymin": -15538711.096309224,
+              "xmax": 17811118.526923772,
+              "ymax": 15538711.096309224,
+              "spatialReference": {
+                  "wkid": 102100,
+                  "latestWkid": 3857
+              }
+          },
+          "allowGeometryUpdates": true,
+          "hasAttachments": true,
+          "attachmentProperties": [
+              {
+                  "name": "id",
+                  "fieldName": "ATTACHMENTID",
+                  "isEnabled": true
+              },
+              {
+                  "name": "globalId",
+                  "fieldName": "AttachmentGlobalID",
+                  "isEnabled": true
+              },
+              {
+                  "name": "name",
+                  "fieldName": "ATT_NAME",
+                  "isEnabled": true
+              },
+              {
+                  "name": "size",
+                  "fieldName": "DATA_SIZE",
+                  "isEnabled": true
+              },
+              {
+                  "name": "contentType",
+                  "fieldName": "CONTENT_TYPE",
+                  "isEnabled": true
+              },
+              {
+                  "name": "keywords",
+                  "fieldName": "Keywords",
+                  "isEnabled": true
+              },
+              {
+                  "name": "exifInfo",
+                  "fieldName": "ExifInfo",
+                  "isEnabled": true
+              }
+          ],
+          "htmlPopupType": "esriServerHTMLPopupTypeNone",
+          "hasM": true,
+          "allowUpdateWithoutMValues": true,
+          "hasZ": false,
+          "objectIdField": "OBJECTID",
+          "uniqueIdField": {
+              "name": "OBJECTID",
+              "isSystemMaintained": true
+          },
+          "globalIdField": "",
+          "typeIdField": "",
+          "fields": [
+              {
+                  "name": "OBJECTID",
+                  "type": "esriFieldTypeOID",
+                  "alias": "OBJECTID",
+                  "sqlType": "sqlTypeOther",
+                  "nullable": false,
+                  "editable": false,
+                  "visible": true,
+                  "domain": null,
+                  "defaultValue": null
+              }
+          ],
+          "indexes": [
+              {
+                  "name": "Daily_Activity_Comments_Shape_sidx",
+                  "fields": "Shape",
+                  "isAscending": false,
+                  "isUnique": false,
+                  "description": "Shape Index"
+              },
+              {
+                  "name": "PK__Daily_Activity_Comments__F4B70D85571405E5",
+                  "fields": "OBJECTID",
+                  "isAscending": true,
+                  "isUnique": true,
+                  "description": "clustered, unique, primary key"
+              }
+          ],
+          "dateFieldsTimeReference": {
+              "timeZone": "UTC",
+              "respectsDaylightSaving": false
+          },
+          "preferredTimeReference": null,
+          "types": [],
+          "templates": [
+              {
+                  "name": "New Feature",
+                  "description": "",
+                  "drawingTool": "esriFeatureEditToolPoint",
+                  "prototype": {
+                      "attributes": {
+                          "Field1": null,
+                          "Field2": null
+                      }
+                  }
+              }
+          ],
+          "supportedQueryFormats": "JSON, geoJSON, PBF",
+          "supportedAppendFormats": "sqlite,geoPackage,shapefile,filegdb,featureCollection,geojson,csv,excel,imageCollection",
+          "supportedExportFormats": "csv,shapefile,sqlite,geoPackage,filegdb,featureCollection,geojson,excel",
+          "supportedSpatialRelationships": [
+              "esriSpatialRelIntersects",
+              "esriSpatialRelContains",
+              "esriSpatialRelCrosses",
+              "esriSpatialRelEnvelopeIntersects",
+              "esriSpatialRelIndexIntersects",
+              "esriSpatialRelOverlaps",
+              "esriSpatialRelTouches",
+              "esriSpatialRelWithin",
+              "esriSpatialRelDisjoint",
+              "esriSpatialRelRelation"
+          ],
+          "supportedContingentValuesFormats": "JSON, PBF",
+          "supportedSyncDataOptions": 4,
+          "hasStaticData": false,
+          "maxRecordCount": 2000,
+          "standardMaxRecordCount": 32000,
+          "standardMaxRecordCountNoGeometry": 32000,
+          "tileMaxRecordCount": 8000,
+          "maxRecordCountFactor": 1,
+          "capabilities": "Create,Delete,Query,Update,Editing"
+      }
+  ]
+}
